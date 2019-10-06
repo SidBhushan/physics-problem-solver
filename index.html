@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Physics Problem Solver</title>
+    <style>
+        body {
+            text-align: center;
+        }
+
+        #givens {
+            margin-top: 1em;
+        }
+
+        #solve-button {
+            margin-top: 1em;
+        }
+
+        table,
+        tr,
+        td {
+            margin: auto;
+            border: 1px solid black;
+        }
+    </style>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+
+<body>
+    <input type="text" id="value-to-solve-for" placeholder="Variable to Solve For">
+    <table id="givens">
+        <tbody>
+        </tbody>
+    </table>
+    <button id="solve-button">Solve!</button>
+
+    <div id="work">
+    </div>
+
+    <script src="equations.js"></script>
+    <script src="solver.js"></script>
+    <script src="ui.js"></script>
+</body>
+
+</html>
